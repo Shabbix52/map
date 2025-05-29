@@ -1,0 +1,171 @@
+.user-profile-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+  background: #f7f7f7;
+  padding: 24px 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+  border: 2px solid #eee;
+}
+
+.logout-btn {
+  margin-top: 16px;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+.logout-btn:hover {
+  background: #d9363e;
+}
+
+.book-list-container {
+  width: 100%;
+}
+
+.book-list-container h4 {
+  margin-bottom: 16px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.loading-books, .no-books {
+  text-align: center;
+  color: #888;
+  margin: 32px 0;
+}
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.user-data h3{
+    font-weight: 600;
+    text-align: center;
+}
+
+.actions-container{
+    display: flex;
+    gap: 10px;
+}
+
+.book-container{
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(229, 229, 244, 1);
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+}
+
+.book-container h6{
+    font-weight: 500;
+}
+
+.the-fricking-book img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.book-container button{ 
+    all: unset;
+    display: flex;
+    gap: 8px;
+    background-color: rgb(44, 44, 44);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    width: 75%;
+    cursor: pointer;
+}
+
+.actions-container{
+    display: flex;
+    width: 100%;
+}
+
+.actions-container button{
+    all: unset;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgb(44, 44, 44);
+    padding: 4px;
+    gap: 4px;
+    color: white;
+    text-align: center;
+    margin-bottom: 24px; /* Add this line */
+}
+
+.action p{
+    font-size: 12px;
+    max-width: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+@media(max-width: 1020px){
+    .book-container{
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .book h6{
+        text-align: center;
+    }
+}
+
